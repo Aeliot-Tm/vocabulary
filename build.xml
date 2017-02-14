@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<project
+        name="quickstart"
+        description="Simple test build file"
+        phingVersion="2.0.0"
+        default="build">
+
+    <target name="build" description="Producing the build.">
+        <!-- Task calls here -->
+    </target>
+    <target name="optimise" description="Optimising of ">
+        <!-- Task calls here -->
+    </target>
+</project>

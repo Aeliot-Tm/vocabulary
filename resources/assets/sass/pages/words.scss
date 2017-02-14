@@ -1,0 +1,25 @@
+.words-list {
+    .word-bl {
+        position: relative;
+        border: 1px solid $legend-border-color;
+        border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+        padding: 10px 20px 15px;
+
+        &:hover {
+            box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.08);
+        }
+
+        + .word-bl {
+            margin-top: 25px;
+        }
+
+        .g-translate {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            margin-bottom: -6px;
+            background: url(../img/translate_24dp.png) no-repeat center;
+            background-size: contain;
+        }
+    }
+}

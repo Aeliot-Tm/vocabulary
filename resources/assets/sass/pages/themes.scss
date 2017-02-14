@@ -1,0 +1,14 @@
+.theme-add-bl {
+    .theme-add-form {
+        display: none;
+    }
+
+    &.show-form {
+        .js-theme-add {
+            display: none;
+        }
+        .theme-add-form {
+            display: block;
+        }
+    }
+}

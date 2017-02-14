@@ -11,6 +11,17 @@ var elixir = require('laravel-elixir');
  |
  */
 
+// NOTE uncomment this file if you don't want get "*.map" files
+// elixir.config.sourcemaps = false;
+
 elixir(function(mix) {
-    mix.sass('app.scss');
+    mix.sass('app.scss', 'public/assets/css/app.css');
+});
+
+elixir(function(mix) {
+    mix.scripts(['App/*.js', 'App/*/*.js', 'app.js'], 'public/assets/js/app.js');
+});
+
+elixir(function(mix) {
+    mix.copy('resources/assets/img', 'public/assets/img');
 });
